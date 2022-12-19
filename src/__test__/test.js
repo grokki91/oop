@@ -14,9 +14,11 @@ describe('Check field name in class Character', () => {
       health: 100,
       level: 1,
       name: 'Monster',
-      type: 'Bowman',
+      type: 'Bowerman',
+      attack: 0,
+      defence: 0,
     };
-    expect(new Character('Monster', 'Bowman')).toEqual(expextedHero);
+    expect(new Character('Monster', 'Bowerman')).toEqual(expextedHero);
   });
 });
 

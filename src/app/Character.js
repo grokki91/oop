@@ -4,12 +4,14 @@ export default class Character {
     this.type = type;
     this.health = 100;
     this.level = 1;
+    this.attack = 0;
+    this.defence = 0;
 
     if (this.name.length < 2 || this.name.length > 10) {
       throw new Error('Некорректная длина имени');
     }
 
-    const typeArray = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
+    const typeArray = ['Bowerman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
     if (!this.type.includes(...typeArray)) {
       throw new Error('Некорректный тип персонажа');
     }
